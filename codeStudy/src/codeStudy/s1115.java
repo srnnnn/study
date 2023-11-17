@@ -1,5 +1,7 @@
 package codeStudy;
 
+import java.util.*;
+
 public class s1115 {
 	
     public int solution1(int n, int k) {
@@ -37,22 +39,17 @@ public class s1115 {
     }
     
     public String solution5(String[] participant, String[] completion) {
-        String answer = "";
-        int count=0;
+        Arrays.sort(participant);
+        Arrays.sort(completion);
+        String answer = "";    
         for(int i=0;i<completion.length;i++){
-        	System.out.println(count);
-            for(int j=0;j<participant.length;j++){
-                if(participant[j].equals(completion[i])){
-                  count++;
-                }
+            if(!participant[i].equals(completion[i])){
+                answer=participant[i];
+                break;
             }
-            if(count==0){
-               return participant[i];
-            }
-            count=0;
-            
         }
-        return answer;
+        String result=answer.equals("")?participant[completion.length]:answer;
+        return result;
     
     }
 
@@ -76,9 +73,11 @@ public class s1115 {
 		String result4=instance.solution4("hello", 2);
 		System.out.println("결과: "+result4);
 		
-		//5. 
-		String[] participant= {"leo", "kiki", "eden"};
-		String[] completion= {"leo", "kiki"};
+		//5. 알고리즘 문제 (완주하지 못한 선수)
+		//수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
+		//마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.
+		String[] participant= {"leo", "kiki","filipa", "eden"};
+		String[] completion= {"leo", "kiki","eden"};
 		String result5=instance.solution5(participant, completion);
 		System.out.println("결과: "+result5);
 	}
