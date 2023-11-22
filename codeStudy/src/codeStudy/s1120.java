@@ -65,23 +65,13 @@ public class s1120 {
     }
 
     public String solution5(int age) {
+        String age_s=Integer.toString(age);
         String answer = "";
-       
-        ArrayList<Integer> num=new ArrayList<Integer>();
-        int temp=age;
-        while(temp>0){
-            num.add(temp%10);     
-            temp/=10;
-        }
-        for(int i=0;i<num.size();i++) {
-        	for(int j=0;j<=26;j++) {
-        		if(num.get(i)==j) {
-        		
-        		}
-        	}
-        }
         
-        
+        for(int i=0;i<age_s.length();i++) {
+        	answer += (char)(age_s.charAt(i)+49);
+        }
+    
         return answer;
     }
 	public static void main(String[] args) {
@@ -107,9 +97,10 @@ public class s1120 {
 			System.out.print(result4[i]);
 		}
 		System.out.println();
-		int aa=('a'+100)-'a';
-		int z='a';
-		System.out.println(z);
+		
+		//5. a는 0, b는 1, c는 2, ..., j는 9입니다. 예를 들어 23살은 cd, 51살은 fb로 표현합니다. 나이 age가 매개변수로 주어질 때 PROGRAMMER-962식 나이를 return하도록 solution 함수를 완성해주세요.
+		String result5=instance.solution5(56);
+		System.out.println(result5);
 
 	}
 
