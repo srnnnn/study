@@ -41,6 +41,16 @@ public class s1122 {
         return answer;
     }
     
+    public String solution5(String my_string) {
+        String answer = "";
+        
+        for(int i=my_string.length()-1;i>=0;i--){
+            char c=my_string.charAt(i);
+            answer += c;
+        }
+        return answer;
+    }
+    
 	public static void main(String[] args) {
 		s1122 instance = new s1122();
 		
@@ -64,6 +74,10 @@ public class s1122 {
 		//4. (자릿수 더하기)정수 n이 매개변수로 주어질 때 n의 각 자리 숫자의 합을 return하도록 solution 함수를 완성해주세요
 		int result4=instance.solution4(12345);
 		System.out.println(result4);
+		
+		//5. (문자열 뒤집기) 문자열 my_string이 매개변수로 주어집니다. my_string을 거꾸로 뒤집은 문자열을 return하도록 solution 함수를 완성해주세요.
+		String result5=instance.solution5("hello");
+		System.out.println(result5);
 	}
 
 }
