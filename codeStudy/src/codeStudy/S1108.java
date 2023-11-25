@@ -2,7 +2,7 @@ package codeStudy;
 
 import java.util.*;
 
-public class s1108 {
+public class S1108 {
 
 	public static void main(String[] args) {
 		//1. 중앙값 구하기

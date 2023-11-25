@@ -1,6 +1,6 @@
 package codeStudy;
 
-public class s1107 {
+public class S1107 {
 	
 	int solution1(int num1, int num2) {
 	    double answer1 = (double)num1/num2*1000;
@@ -27,7 +27,7 @@ public class s1107 {
     
 	public static void main(String[] args) {
 		
-		 s1107 instance = new s1107();
+		 S1107 instance = new S1107();
 		//1. 정수 num1과 num2가 매개변수로 주어질 때, num1을 num2로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.
 	     int result1 = instance.solution1(3,2); 
 	     System.out.println("결과: " + result1);

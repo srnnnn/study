@@ -2,7 +2,7 @@ package codeStudy;
 
 import java.util.*;
 
-public class s1113 {
+public class S1113 {
 	
     public int solution1(int[] numbers) {
         Arrays.sort(numbers);     
@@ -30,7 +30,7 @@ public class s1113 {
     }
     
 	public static void main(String[] args) {
-		s1113  instance = new s1113();
+		S1113  instance = new S1113();
 		//1. 정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
 	    int[] in = {1, 2, 3, 4, 5};
 	    int result1=instance.solution1(in);

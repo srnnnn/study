@@ -2,7 +2,7 @@ package codeStudy;
 
 import java.util.*;
 
-public class s1120 {
+public class S1120 {
 	
     public int[] solution1(int n) {
         int count=0;
@@ -75,7 +75,7 @@ public class s1120 {
         return answer;
     }
 	public static void main(String[] args) {
-		s1120 instance=new s1120();
+		S1120 instance=new S1120();
 		
 		//1. 정수 n이 매개변수로 주어질 때, n 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.
 		int result1[]=instance.solution1(10);
